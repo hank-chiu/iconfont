@@ -1,10 +1,14 @@
 @font-face {
-  font-family: "gf";
+  font-family: "gofreight";
   src: url("icon.ttf") format("truetype");
 }
 
 .icon {
-  font-family: "gf";
+  font-family: gofreight;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+
 }
 
 i:before {
