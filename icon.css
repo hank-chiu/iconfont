@@ -12,5 +12,6 @@
 }
 
 i:before {
-  content: '\uEA01'
+  font-family: gofreight;
+  content: 'copy_to'
 }
