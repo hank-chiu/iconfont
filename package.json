@@ -1,8 +1,10 @@
 {
-  "name": "node-starter",
+  "name": "iconfont",
   "version": "0.0.0",
   "scripts": {
     "start": "serve",
+    "build": "node index.js",
+    "build:font": "svgicons2svgfont -f gofreight -o icon.ttf -n icons/*.svg",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
