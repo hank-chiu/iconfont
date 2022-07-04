@@ -4,7 +4,6 @@
   "scripts": {
     "start": "serve",
     "build": "node index.js",
-    "build:font": "svgicons2svgfont -f gofreight -o icon.ttf -a -n icons/*.svg",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

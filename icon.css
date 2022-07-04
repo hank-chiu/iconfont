@@ -6,8 +6,3 @@
 .icon {
   font-family: gofreight;
 }
-
-.icon2:before {
-  font-family: gofreight;
-  content: 'copy_to'
-}
