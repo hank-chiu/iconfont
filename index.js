@@ -3,15 +3,17 @@ const svg2ttf = require('svg2ttf');
 const fs = require('fs');
 const fontStream = new SVGIcons2SVGFontStream({
   fontName: 'gofreight',
+  fontHeight: 1000,
+  normalize: true,
 });
 
 // Setting the font destination
 fontStream
   .pipe(fs.createWriteStream('icon.svg'))
   .on('finish', function () {
-    console.log('Font successfully created!');
     const ttf = svg2ttf(fs.readFileSync('icon.svg', 'utf8', {}));
     fs.writeFileSync('icon.ttf', Buffer.from(ttf.buffer));
+    console.log('Font successfully created!');
   })
   .on('error', function (err) {
     console.log(err);
