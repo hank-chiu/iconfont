@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "gf";
+  src: url("icon.ttf") format("truetype");
+}
+
+.icon {
+  font-family: "gf";
+}
+
+i:before {
+  content: '\uEA01'
+}
