@@ -1,7 +1,8 @@
 const SVGIcons2SVGFontStream = require('svgicons2svgfont');
+const svg2ttf = require('svg2ttf');
 const fs = require('fs');
 const fontStream = new SVGIcons2SVGFontStream({
-  fontName: 'hello',
+  fontName: 'gofreight',
 });
 
 // Setting the font destination
@@ -9,6 +10,7 @@ fontStream
   .pipe(fs.createWriteStream('icon.svg'))
   .on('finish', function () {
     console.log('Font successfully created!');
+
   })
   .on('error', function (err) {
     console.log(err);
