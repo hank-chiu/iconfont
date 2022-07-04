@@ -10,7 +10,8 @@ fontStream
   .pipe(fs.createWriteStream('icon.svg'))
   .on('finish', function () {
     console.log('Font successfully created!');
-
+    const ttf = svg2ttf(fs.readFileSync('icon.svg', 'utf8', {}));
+    fs.writeFileSync('icon.ttf', Buffer.from(ttf.buffer));
   })
   .on('error', function (err) {
     console.log(err);
