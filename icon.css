@@ -5,13 +5,9 @@
 
 .icon {
   font-family: gofreight;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-
 }
 
-i:before {
+.icon2:before {
   font-family: gofreight;
-  content: '&#xEA01;'
+  content: 'copy_to'
 }

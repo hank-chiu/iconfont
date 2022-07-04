@@ -3,7 +3,7 @@ const svg2ttf = require('svg2ttf');
 const fs = require('fs');
 const fontStream = new SVGIcons2SVGFontStream({
   fontName: 'gofreight',
-  //fontHeight: 1000,
+  fontHeight: 1000,
   normalize: true,
 });
 
