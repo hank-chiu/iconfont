@@ -15,10 +15,10 @@ fontStream
   });
 
 // Writing glyphs
-const glyph1 = fs.createReadStream('icons/copy-to.svg');
+const glyph1 = fs.createReadStream('icons/copy_to.svg');
 glyph1.metadata = {
-  unicode: ['copy-to'],
-  name: 'copy-to',
+  unicode: ['copy_to'],
+  name: 'copy_to',
 };
 fontStream.write(glyph1);
 
